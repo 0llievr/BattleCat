@@ -13,6 +13,7 @@ class HomeView extends StatelessWidget {
     return ViewModelBuilder<HomeViewModel>.reactive(
         viewModelBuilder: () => HomeViewModel(),
         onModelReady: (model) {
+          print(Provider.of<User>(context).uid);
           model.listenToCats(Provider.of<User>(context).uid);
         },
         builder: (context, model, child) => Scaffold(

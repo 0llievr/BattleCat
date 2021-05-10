@@ -1,24 +1,23 @@
-/*
-import 'package:grampacker/models/battle.dart';
 import 'package:flutter/material.dart';
-import 'package:grampacker/ui/widgets/trip_item.dart';
+import 'package:grampacker/models/cat.dart';
+import 'package:grampacker/ui/widgets/cat_item.dart';
 import 'package:grampacker/viewmodels/home_view_model.dart';
 
-class TripsList extends StatelessWidget {
+class CatList extends StatelessWidget {
   final HomeViewModel model;
-  const TripsList({Key key, this.model}) : super(key: key);
+  const CatList({Key key, this.model}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    List<Trip> trips = model.trips;
+    List<Cat> trips = model.cats;
     return trips != null
         ? ListView.builder(
             itemCount: trips.length,
             itemBuilder: (context, index) => GestureDetector(
-              onTap: () => model.navigateToTripDetailsView(index),
-              child: TripItem(
-                trip: trips[index],
-                onDeleteItem: () => model.deleteTrip(index),
+              //onTap: () => model.navigateToCatsDetailsView(index),
+              child: CatItem(
+                cat: trips[index],
+                //onDeleteItem: () => model.deleteTrip(index),
                 //onTap: () => model.navigateToTripDetailsView(index)),
               ),
             ),
@@ -31,4 +30,3 @@ class TripsList extends StatelessWidget {
           );
   }
 }
-*/

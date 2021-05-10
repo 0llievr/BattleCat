@@ -19,6 +19,7 @@ class Cat {
 
   static Cat fromMap(Map<String, dynamic> map, String documentId) {
     if (map == null) return null;
+    assert(map["name"] != null);
     return Cat(
       name: map['name'],
       attack: map['attack'],

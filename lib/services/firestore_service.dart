@@ -142,15 +142,11 @@ class FirestoreService {
   }
 
   Stream listenToCatsRealTime(String uid) {
-    final CollectionReference _catsCollectionReference =
-        _usersCollectionReference.doc(uid).collection("cats");
-
-    _catsCollectionReference.snapshots().listen((inventorySnapshot) {
-      if (inventorySnapshot.docs.isNotEmpty) {
-        var cats = inventorySnapshot.docs
-            .map((snapshot) => Cat.fromMap(snapshot.data(), snapshot.id))
-            .where((mappedItem) => mappedItem.name != null)
-            .toList();
+    _catsCollectionReference.snapshots().listen((catSnapshot) {
+      if (catSnapshot.docs.isNotEmpty) {
+        List<Cat> cats = catSnapshot.docs.map((snapshot) {
+          return Cat.fromMap(snapshot.data(), snapshot.id);
+        }).toList();
 
         _catsController.add(cats);
       }

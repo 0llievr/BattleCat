@@ -5,12 +5,10 @@ import 'package:grampacker/constants/route_names.dart';
 import 'package:grampacker/locator.dart';
 import 'package:grampacker/models/cat.dart';
 import 'package:grampacker/models/battle.dart';
-import 'package:grampacker/services/authentication_service.dart';
 import 'package:grampacker/services/dialog_service.dart';
 import 'package:grampacker/services/firestore_service.dart';
 import 'package:grampacker/services/navigation_service.dart';
-import 'package:grampacker/ui/views/captured_view.dart';
-import 'package:grampacker/ui/views/cats_view.dart';
+import 'package:grampacker/ui/views/cats_home_view.dart';
 import 'package:grampacker/viewmodels/base_model.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -39,9 +37,9 @@ class HomeViewModel extends BaseModel {
 
   Widget selectedPage(HomeViewModel model) {
     List _barOptions = [
-      CatList(model: model),
-      Text(''),
       Text('test'),
+      Text(''),
+      CatsHomeView(cats: _cats),
     ];
     return _barOptions.elementAt(_navBarState);
   }
