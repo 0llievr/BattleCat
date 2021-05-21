@@ -1,8 +1,8 @@
-import 'package:grampacker/constants/route_names.dart';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/services/authentication_service.dart';
-import 'package:grampacker/services/navigation_service.dart';
-import 'package:grampacker/viewmodels/base_model.dart';
+import 'package:battlecats/constants/route_names.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/services/authentication_service.dart';
+import 'package:battlecats/services/navigation_service.dart';
+import 'package:battlecats/viewmodels/base_model.dart';
 
 class StartUpViewModel extends BaseModel {
   final AuthenticationService _authenticationService =

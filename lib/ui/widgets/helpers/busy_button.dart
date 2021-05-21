@@ -1,4 +1,4 @@
-import 'package:grampacker/ui/shared/shared_styles.dart';
+import 'package:battlecats/ui/shared/shared_styles.dart';
 import 'package:flutter/material.dart';
 
 /// A button that shows a busy indicator in place of title

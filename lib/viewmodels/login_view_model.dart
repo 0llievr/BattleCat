@@ -1,8 +1,8 @@
-import 'package:grampacker/constants/route_names.dart';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/services/authentication_service.dart';
-import 'package:grampacker/services/dialog_service.dart';
-import 'package:grampacker/services/navigation_service.dart';
+import 'package:battlecats/constants/route_names.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/services/authentication_service.dart';
+import 'package:battlecats/services/dialog_service.dart';
+import 'package:battlecats/services/navigation_service.dart';
 import 'package:flutter/foundation.dart';
 
 import 'base_model.dart';

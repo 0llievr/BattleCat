@@ -1,4 +1,4 @@
-import 'package:grampacker/models/cat.dart';
+import 'package:battlecats/models/cat.dart';
 import 'package:flutter/material.dart';
 
 class CatItem extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:grampacker/ui/shared/shared_styles.dart';
-import 'package:grampacker/ui/shared/ui_helpers.dart';
+import 'package:battlecats/ui/shared/shared_styles.dart';
+import 'package:battlecats/ui/shared/ui_helpers.dart';
 
 import 'note_text.dart';
 

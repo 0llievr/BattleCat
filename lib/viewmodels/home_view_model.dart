@@ -1,15 +1,16 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:grampacker/constants/route_names.dart';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/models/cat.dart';
-import 'package:grampacker/models/battle.dart';
-import 'package:grampacker/services/dialog_service.dart';
-import 'package:grampacker/services/firestore_service.dart';
-import 'package:grampacker/services/navigation_service.dart';
-import 'package:grampacker/ui/views/cats_home_view.dart';
-import 'package:grampacker/viewmodels/base_model.dart';
+import 'package:battlecats/constants/route_names.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/models/cat.dart';
+import 'package:battlecats/models/battle.dart';
+import 'package:battlecats/services/dialog_service.dart';
+import 'package:battlecats/services/firestore_service.dart';
+import 'package:battlecats/services/navigation_service.dart';
+import 'package:battlecats/ui/views/battle_view.dart';
+import 'package:battlecats/ui/views/cats_home_view.dart';
+import 'package:battlecats/viewmodels/base_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 class HomeViewModel extends BaseModel {
@@ -37,7 +38,7 @@ class HomeViewModel extends BaseModel {
 
   Widget selectedPage(HomeViewModel model) {
     List _barOptions = [
-      Text('test'),
+      BattleHomeView(cats: _cats),
       Text(''),
       CatsHomeView(cats: _cats),
     ];

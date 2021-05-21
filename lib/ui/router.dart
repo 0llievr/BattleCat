@@ -1,12 +1,12 @@
 import 'dart:io';
 
-import 'package:grampacker/models/battle.dart';
-import 'package:grampacker/ui/views/captured_view.dart';
-import 'package:grampacker/ui/views/home_view.dart';
+import 'package:battlecats/models/battle.dart';
+import 'package:battlecats/ui/views/captured_view.dart';
+import 'package:battlecats/ui/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:grampacker/constants/route_names.dart';
-import 'package:grampacker/ui/views/login_view.dart';
-import 'package:grampacker/ui/views/signup_view.dart';
+import 'package:battlecats/constants/route_names.dart';
+import 'package:battlecats/ui/views/login_view.dart';
+import 'package:battlecats/ui/views/signup_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {

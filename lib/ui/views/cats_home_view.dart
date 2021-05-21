@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:grampacker/models/cat.dart';
+import 'package:battlecats/models/cat.dart';
 import 'package:flutter/material.dart';
-import 'package:grampacker/ui/widgets/cat_item.dart';
-import 'package:grampacker/viewmodels/cats_view_model.dart';
+import 'package:battlecats/ui/widgets/cat_item.dart';
+import 'package:battlecats/viewmodels/cats_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:stacked/stacked.dart';
 
@@ -30,8 +30,10 @@ class CatsHomeView extends StatelessWidget {
                           itemBuilder: (context, index) {
                             print("name: " + cats[index].name.toString());
                             return GestureDetector(
-                              //onTap: () =>
-                              //    model.navigateToInventoryDetailsView(index),
+                              /*
+                              onTap: () =>
+                                  model.navigateToCatDetailsView(index),
+                                  */
                               child: Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 8),
                                 child: CatItem(

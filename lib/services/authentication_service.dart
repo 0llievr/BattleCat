@@ -1,8 +1,8 @@
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/models/trainer.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/models/trainer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
-import 'package:grampacker/services/firestore_service.dart';
+import 'package:battlecats/services/firestore_service.dart';
 
 class AuthenticationService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;

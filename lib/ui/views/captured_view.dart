@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/services/firestore_service.dart';
-import 'package:grampacker/ui/widgets/helpers/input_field.dart';
-import 'package:grampacker/viewmodels/captured_view_model.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/services/firestore_service.dart';
+import 'package:battlecats/ui/widgets/helpers/input_field.dart';
+import 'package:battlecats/viewmodels/captured_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:stacked/stacked.dart';

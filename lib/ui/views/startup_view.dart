@@ -1,4 +1,4 @@
-import 'package:grampacker/viewmodels/startup_view_model.dart';
+import 'package:battlecats/viewmodels/startup_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 

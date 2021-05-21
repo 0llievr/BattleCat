@@ -1,10 +1,10 @@
 import 'dart:io';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/models/cat.dart';
-import 'package:grampacker/services/firestore_service.dart';
-import 'package:grampacker/services/navigation_service.dart';
-import 'package:grampacker/ui/views/captured_view.dart';
-import 'package:grampacker/viewmodels/base_model.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/models/cat.dart';
+import 'package:battlecats/services/firestore_service.dart';
+import 'package:battlecats/services/navigation_service.dart';
+import 'package:battlecats/ui/views/captured_view.dart';
+import 'package:battlecats/viewmodels/base_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 class CapturedViewModel extends BaseModel {

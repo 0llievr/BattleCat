@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grampacker/models/cat.dart';
-import 'package:grampacker/ui/widgets/cat_item.dart';
-import 'package:grampacker/viewmodels/home_view_model.dart';
+import 'package:battlecats/models/cat.dart';
+import 'package:battlecats/ui/widgets/cat_item.dart';
+import 'package:battlecats/viewmodels/home_view_model.dart';
 
 class CatList extends StatelessWidget {
   final HomeViewModel model;

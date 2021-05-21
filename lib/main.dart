@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:grampacker/services/dialog_service.dart';
-import 'package:grampacker/services/navigation_service.dart';
-import 'package:grampacker/ui/views/startup_view.dart';
+import 'package:battlecats/services/dialog_service.dart';
+import 'package:battlecats/services/navigation_service.dart';
+import 'package:battlecats/ui/views/startup_view.dart';
 import 'package:provider/provider.dart';
 import 'managers/dialog_manager.dart';
 import 'provider_setup.dart';

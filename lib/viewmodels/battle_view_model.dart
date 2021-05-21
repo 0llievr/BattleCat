@@ -5,15 +5,25 @@ import 'package:battlecats/services/firestore_service.dart';
 import 'package:battlecats/services/navigation_service.dart';
 import 'package:battlecats/viewmodels/base_model.dart';
 
-class CatsHomeViewModel extends BaseModel {
+class BattleHomeViewModel extends BaseModel {
   final NavigationService _navigationService = locator<NavigationService>();
   final FirestoreService _firestoreService = locator<FirestoreService>();
   final DialogService _dialogService = locator<DialogService>();
 
-  CatsHomeViewModel(this._cats);
+  BattleHomeViewModel(this._cats);
 
   final List<Cat> _cats;
   List<Cat> get cats => _cats;
+
+  Cat _active;
+  Cat get active => _active;
+  String _activeName;
+  String get activeName => _activeName;
+
+  void setActiveCat(Cat c) {
+    _active = c;
+    notifyListeners();
+  }
 
 /*
   Future deleteInventoryItem(int index, String userId) async {

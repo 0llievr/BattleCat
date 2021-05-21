@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grampacker/locator.dart';
-import 'package:grampacker/models/dialog_models.dart';
-import 'package:grampacker/services/dialog_service.dart';
+import 'package:battlecats/locator.dart';
+import 'package:battlecats/models/dialog_models.dart';
+import 'package:battlecats/services/dialog_service.dart';
 
 class DialogManager extends StatefulWidget {
   final Widget child;

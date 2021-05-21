@@ -1,10 +1,10 @@
-import 'package:grampacker/ui/shared/ui_helpers.dart';
-import 'package:grampacker/ui/widgets/helpers/busy_button.dart';
-import 'package:grampacker/ui/widgets/helpers/input_field.dart';
-import 'package:grampacker/ui/widgets/helpers/text_link.dart';
+import 'package:battlecats/ui/shared/ui_helpers.dart';
+import 'package:battlecats/ui/widgets/helpers/busy_button.dart';
+import 'package:battlecats/ui/widgets/helpers/input_field.dart';
+import 'package:battlecats/ui/widgets/helpers/text_link.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:grampacker/viewmodels/login_view_model.dart';
+import 'package:battlecats/viewmodels/login_view_model.dart';
 
 class LoginView extends StatelessWidget {
   final emailController = TextEditingController();
